@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox Challenge</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Jungle Cruise</h2>
+            <img src= "https://lumiere-a.akamaihd.net/v1/images/p_junglecruise_21740_v2_bb7f0ae4.jpeg" alt="Image 1" height="80 cm" width="80">
+            <p><strong>"Jungle Cruise"</strong> is a 2021 action-adventure film based on the Disney theme park attraction of the same name.
+                Starring Dwayne Johnson and Emily Blunt, the movie follows the adventurous journey of Dr.
+                Lily Houghton and skipper Frank Wolff down the Amazon River in search of a mythical healing tree.
+                The film is filled with humor, action, and CGI effects, making it an entertaining watch for both
+                families and fans of adventure movies like Indiana Jones and Jumanji.</p>
+        </div>
+        <div class="card">
+            <h2>Avatar</h2>
+            <img src= "https://lumiere-a.akamaihd.net/v1/images/p_disneymovies_avatarthewayofwater_streamingupdate_2096_0908fa1b.jpeg" alt="Image 2" height="80 cm" width="80">
+            <p><strong>"Avatar:</strong> The Way of Water" is the highly anticipated sequel to James Cameron's 2009 blockbuster "Avatar."
+                The film is expected to continue the story of the Na'vi and their world, Pandora, as well as explore new
+                themes and technological advancements. Keep an eye out for updates as the release date approaches, and get
+                ready to dive back into the visually stunning and immersive world of "Avatar."</p>
+        </div>
+        <div class="card">
+            <h2>Treasure Planet</h2>
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvtQwmP5EbVbP2QmcNBPWaWdL4r8kdiQV3UKBWTX7tQZUhhTvd"alt="Image 3" height="80 cm" width="80">
+            <p><strong>"Treasure Planet"</strong> is a captivating 2002 animated film that reimagines Robert Louis Stevenson's classic "Treasure Island" in a futuristic setting.
+                Directed by John Musker and Ron Clements, the movie takes viewers on a thrilling journey across the universe as young Jim Hawkins and a cosmic crew,
+                led by the daring Captain Amelia, embark on an exhilarating treasure hunt. Aboard a glittering space galleon, Jim encounters the ship's cyborg cook,
+                John Silver, who imparts valuable lessons on friendship and the power of dreams. </p>
+        </div>
+        <div class="card">
+            <h2>Luca</h2>
+            <img src="https://static2.tribute.ca/poster/660x980/luca-152541.jpg" alt="Image 4" height="80 cm" width="80">
+            <p><strong>"Luca"</strong> is a heartwarming 2021 animated film set in a beautiful seaside town on the Italian Riviera.
+                Directed by Enrico Casarosa, the movie follows the unforgettable summer adventures of Luca,
+                a bright and inventive 13-year-old sea monster, and his newfound best friend, Alberto.
+                The two friends share gelato, pasta, and endless scooter rides, but their fun is threatened by a deeply-held secret:
+                they are sea monsters from another world just below the waters' surface.
+                As they navigate the human world, they form a deep bond and embark on a journey of self-discovery, friendship, and acceptance.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CC14 Lab Act 7: Flexbox </p>
+    </footer>
+</body>
+
+<style>
+    /* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #500251;
+}
+
+header {
+    background-color: #3b133b;
+    padding: 25px 20%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .45s ease;
+    text-shadow: 2px 1px rgb(32, 28, 32);
+    text-decoration: none;
+    color: #a5a5a5;
+}
+nav ul li a:hover{
+    color:purple;
+}
+nav ul li a:active{
+    color: purple;
+}
+
+.card-container {
+    max-width: 1500px;
+    margin: 110px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 5px 10px lightcyan;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.card:hover::before{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+    transition: all 2s ease;
+}
+.card:hover{
+    color: #1c8bf3;
+    box-shadow: 0 0 5px #1c8bf3;
+    text-shadow: 0 0 5px #1c8bf3;
+    transition: all 2s ease;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+
+</html>
